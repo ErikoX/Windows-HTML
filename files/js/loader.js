@@ -14,4 +14,4 @@ function getScript() {
     return call + ".js"
 }
 
-console.log(getScript)
+addScript(getScript())
