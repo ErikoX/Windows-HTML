@@ -10,7 +10,7 @@ function addScript(file) {
 function getScript() {
     var url = window.location.pathname;
     var spliturl = url.split("/")
-    var call = spliturl[-1].split(".")[0]
+    var call = spliturl[spliturl.length - 1].split(".")[0]
     return call
 }
 
