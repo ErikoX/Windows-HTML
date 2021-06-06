@@ -11,7 +11,7 @@ function getScript() {
     var url = window.location.pathname;
     var spliturl = url.split("/")
     var call = spliturl[spliturl.length - 1].split(".")[0]
-    return call
+    return call + ".js"
 }
 
 console.log(getScript)
