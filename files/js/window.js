@@ -1,18 +1,14 @@
-function load() {
-    var xmlHttp = new XMLHttpRequest();
 
-    xmlHttp.onreadystatechange = function() {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-        {
-            resp = xmlHttp.responseText;
-        }
-    };
+/* --- This is for displaying programs ---
+This makes programs openable through the taskbar.
+It works by getting the div (the taskbar icon)'s
+id which is their program name. */
 
-    xmlHttp.open("GET", test_page, true); // true for asynchronous
-    xmlHttp.send(null);
-    
+function openup(pressed) {
+    id = pressed.id
+    document.getElementById("program-" + id).style = "display: block;"
 }
 
-function display() {
-    
+function closeprogram(program) {
+    document.getElementById("program-" + program).style = "display: none;"
 }

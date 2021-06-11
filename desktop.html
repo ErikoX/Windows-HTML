@@ -1,25 +1,26 @@
 <html>
     <head>
         <script src="files/js/loader.js"></script>
+        <script src="files/js/window.js"></script>
         <link href="files/css/desktop.css" rel="stylesheet"></link>
     </head>
     <body>
         <div class="windows">
             
             <div class="taskbar">
-                <div id="mainmenu">
+                <div id="mainmenu" onclick="openup(this)">
                     <img src="files/img/windows.png">
                 </div>
-                <div id="cortana">
+                <div id="cortana" onclick="openup(this)">
                     <img src="files/img/cortana.png">
                 </div>
-                <div id="word">
+                <div id="word" onclick="openup(this)">
                     <img src="files/img/word.png">
                 </div>
-                <div id="excel">
+                <div id="excel" onclick="openup(this)">
                     <img src="files/img/excel.png">
                 </div>
-                <div id="editor">
+                <div id="editor" onclick="openup(this)">
                     <img src="files/img/editor.png">
                 </div>
             </div>
