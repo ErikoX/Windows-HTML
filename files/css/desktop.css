@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-image: url("http://127.0.0.1:5500/files/img/windowswall.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+img {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+
+.desktop {
+    width: 100vw;
+    height: 92%;
+    background: transparent;
+}
+
+.taskbar {
+    margin: 0;
+    background-color: #252526;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.taskbar > div > img{
+    float: left;
+    height: 27px;
+    width: 29px;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s;
+    background: transparent;
+    z-index: 15;
+
+
+}
+
+.taskbar img:hover {
+    background-color: #363636;
+    color: black;
+}
