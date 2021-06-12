@@ -11,6 +11,7 @@ apps = ["editor"]
 All html files from files/apps will go into
 #programs in the desktop.html */
 
+var loaded = 0
 
 for (var i = 0; i < apps.length; i++) {
 
@@ -46,9 +47,21 @@ for (var i = 0; i < apps.length; i++) {
         stylechange = document.getElementById(id)
         stylechange.style = "display: none;"
 
+        loaded += 1
         console.log("Loaded!")
 
+        if(loaded == apps.length) {
+            e = document.createElement("script");
+            e.src = "files/js/drag.js"
+            document.head.appendChild(e)
+        }
 
     };
     xhr.send();
+
+
+    
 }
+
+
+
