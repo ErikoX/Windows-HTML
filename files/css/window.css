@@ -12,14 +12,26 @@
     height: 36px;
     background: white;
     border-bottom: 1px solid black;
-    align-items: center;
     
+}
+
+.header-extended {
+    display: flex;
+    width: 100%;
+    height: 62px;
+    background: white;
+    border-bottom: 1px solid black;
+    
+    
+}
+
+.header-title {
+    align-items: center;
 }
 
 
 .editorfix {
     position: absolute;
-    top: 9px;
     left: 22px;
 }
 
@@ -27,6 +39,15 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+}
+
+.editorheader {
+    position: absolute;
+    top: -5px;
+    left: 0px;
 }
 
 .header-content-right { 
@@ -35,6 +56,7 @@
     padding: 0;
     position: absolute;
     left: 558px;
+    
 }
 
 
@@ -52,4 +74,29 @@
 .closebtn:hover {
     background: cyan;
     filter: invert(1);
+}
+
+.header-extended-button {
+    border-radius: 0px;
+    background: none;
+    border: none;
+    border: 1px solid white;
+}
+
+.header-extended-button:hover {
+    background: #bfeaff;
+    border: 1px solid #53c7ff;
+}
+
+.header-extended-content {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 39px;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
 }

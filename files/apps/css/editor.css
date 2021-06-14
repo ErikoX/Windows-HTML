@@ -1,0 +1,32 @@
+#dropdown-editor {
+    position: absolute;
+    height: 90px;
+    width: 160px;
+    background: white;
+    border: 1px solid black;
+    display: none;
+    top: 68px;
+    left: 5px;
+    z-index:1000;
+}
+
+#textarea-editor {
+    position: absolute;
+    top: 62px;
+    border: none;
+    width: 99.8%;
+    height: 235px;
+    resize: none;
+}
+
+#dropdown-editor > input {
+    margin: 3px;
+}
+
+#dropdown-editor > button {
+    margin: 3px;
+}
+
+#dropdown-editor > p {
+    margin: 3px;
+}

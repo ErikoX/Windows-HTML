@@ -41,6 +41,7 @@ for (var i = 0; i < apps.length; i++) {
 
         var loadcss = document.createElement("link")
         loadcss.href = "files/apps/css/" + app + ".css"
+        loadcss.rel = "stylesheet"
         document.head.appendChild(loadcss)
 
         id = "program-" + app

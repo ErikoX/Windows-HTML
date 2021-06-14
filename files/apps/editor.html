@@ -1,15 +1,27 @@
 <div id="program-editor" class="window">
     
-    <div id="program-editor-header" class="header">
-        <ul class="header-content-left">
-            <li><img src="files/img/editor-window.png"></img></li>
-            <li class="editorfix" id="editorheader">Editor</li>
-        </ul>
+    <div id="program-editor-header" class="header-extended">
+        <div class="header-title">
+            <ul class="header-content-left">
+                <li><img src="files/img/editor-window.png"></img></li>
+                <li class="editorfix" id="editorheader">Editor</li>
+            </ul>
+        </div>
+        
         <ul class="header-content-right">
-            <li class="closebtn" ><img src="files/img/close.png" onmouseup="closedown('editor')"></li>
+            <li class="closebtn" onmouseup="closedown('editor')"><img src="files/img/close.png"></li>
+        </ul>
+        <ul class="header-extended-content">
+            <li class="header-extended-button"><button onclick="editorsave()">Save</button></li>
         </ul>
     </div>
-    </div id="content-editor" class="content">
+    <div id="content-editor" class="content">
+        <textarea id="textarea-editor"></textarea>
+    </div>
+    <div id="dropdown-editor" style="display: none;">
+        <p>Save to Desktop</p>
+        <input placeholder="File.txt" id="editor-filename">
+        <button onclick="editorfilesave()">Save</button>
     </div>
     
 </div>
