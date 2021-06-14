@@ -14,4 +14,21 @@
     - Create Files
     - Edit Files
 
-## Planned Features
+# Planned Features
+## Near Future (TO-DO)
+- Context Menu
+  - Files
+    - File Deletion
+    - File Creation
+    - File Renaming
+
+- Programs
+  - Explorer
+
+
+## Far Future
+- Folders
+  - Folder Creation
+  - Folder Renaming
+  - Folder Deletion
+  - Putting Files in Folders
