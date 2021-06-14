@@ -1,3 +1,0 @@
-function instantFile(name, content) {
-    
-}
