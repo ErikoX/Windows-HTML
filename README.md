@@ -9,6 +9,7 @@
 - Desktop
   - Taskbar (Only Editor works)
   - Files on Desktop
+    - Drag files
 - Programs
   - Editor
     - Create Files
