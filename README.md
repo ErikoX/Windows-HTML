@@ -14,6 +14,7 @@
     - Create Files
     - Edit Files
 
+
 # Planned Features
 ## Near Future (TO-DO)
 - Context Menu
@@ -21,9 +22,10 @@
     - File Deletion
     - File Creation
     - File Renaming
-
 - Programs
   - Explorer
+- Settings
+  - Change Background
 
 
 ## Far Future

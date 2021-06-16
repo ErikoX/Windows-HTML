@@ -2,6 +2,7 @@
     <head>
         <script src="files/js/loader.js"></script>
         <script src="files/js/window.js"></script>
+        <script src="files/js/ctxmenu.js"></script>
         <link href="files/css/desktop.css" rel="stylesheet"></link>
         <link href="files/css/window.css" rel="stylesheet"></link>
     </head>
@@ -32,6 +33,12 @@
                 <div class="desktopfile" style="display: none;" id="desktopfiletemplate">
                     <img src="files/img/filelogo.png">
                     <p>Hello.txt</p>
+                </div>
+            </div>
+            <div class="menu" id="ctx">
+                <div class="menuoptions" id="opt">
+                        <li class="menu-option" id="cf" onclick="createFile()">Create File</li>
+                        <li class="menu-option" onclick="alert('naw man')">Placeholder</li>
                 </div>
             </div>
         </div>
