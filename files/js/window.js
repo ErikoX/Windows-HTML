@@ -1,20 +1,25 @@
+// Random Number Generation
 function randInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
+// Open a loaded program (Only used in Taskbar, use openbyname() to start programs in the console)
 function openup(pressed) {
     id = pressed.id
     document.getElementById("program-" + id).style = "display: block; top: 16px; left: 16px;"
 }
 
+// Close a opened program
 function closedown(program) {
     document.getElementById("program-" + program).style = "display: none;"
 }
 
+// Open a loaded program by name
 function openbyname(program) {
     document.getElementById("program-" + program).style = "display: block; top: 16px; left: 16px;"
 }
 
+// Instantly create a file with filename and content (Use in console)
 function instantFile(name, content) {
     var file = document.getElementById("desktopfiletemplate").cloneNode(true)
     file.id = "USERFILE--" + name
@@ -41,6 +46,7 @@ function instantFile(name, content) {
     file.style.top = height + "px";
 }
 
+// Overwrite a file's content.
 function overwriteFile(name, content) {
     file = document.getElementById("USERFILE--" + name)
     file.setAttribute("content", content)
