@@ -47,15 +47,10 @@ for (var i = 0; i < apps.length; i++) {
         id = "program-" + app
         stylechange = document.getElementById(id)
         stylechange.style = "display: none;"
-
+        dragElement(document.getElementById(id), "-header");
         loaded += 1
         console.log("Loaded!")
 
-        if(loaded == apps.length) {
-            e = document.createElement("script");
-            e.src = "files/js/drag.js"
-            document.head.appendChild(e)
-        }
 
     };
     xhr.send();
