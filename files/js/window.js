@@ -52,3 +52,11 @@ function overwriteFile(name, content) {
     file = document.getElementById("USERFILE--" + name)
     file.setAttribute("content", content)
 }
+
+function addloader() {
+    var js = document.createElement("script")
+    js.src = "files/js/loader.js"
+    document.head.appendChild(js)
+}
+
+addloader()
