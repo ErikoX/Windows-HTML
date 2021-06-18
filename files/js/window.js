@@ -45,6 +45,7 @@ function instantFile(name, content) {
     }
     file.style.top = height + "px";
     dragElement(document.getElementById("USERFILE--" + name), "")
+    return document.getElementById("USERFILE--" + name)
 }
 
 // Overwrite a file's content.
