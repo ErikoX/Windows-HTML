@@ -14,6 +14,8 @@
   - Editor
     - Create Files
     - Edit Files
+  - Settings
+    - Save State (Save files on the desktop)
 
 
 # Planned Features
