@@ -7,7 +7,7 @@
     display: none;
     top: 68px;
     left: 5px;
-    z-index:1000;
+    z-index: 1000;
 }
 
 #textarea-editor {
@@ -16,7 +16,15 @@
     border: none;
     width: 99.8%;
     height: 235px;
-    resize: none;
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
 }
 
 #dropdown-editor > input {
