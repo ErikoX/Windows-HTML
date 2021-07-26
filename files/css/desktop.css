@@ -66,6 +66,12 @@ img {
     
 }
 
+.desktopfile > input {
+    text-align: center;
+    width: 100%;
+    color: black;
+    outline: none;
+}
 
 .desktopfile > img {
     display: block;

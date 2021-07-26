@@ -1,7 +1,9 @@
 // Random Number Generation
 function randInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
-  }
+}
+
+createfileblock = false
 
 // Open a loaded program (Only used in Taskbar, use openbyname() to start programs in the console)
 function openup(pressed) {
@@ -30,13 +32,13 @@ function instantFile(name, content) {
     file.setAttribute("content", content)
     document.getElementById("filesarea").appendChild(file)
     file.setAttribute("ondblclick", "customeditor(this)")
-    
-    width = randInt(window.innerWidth-30);
+
+    width = randInt(window.innerWidth - 30);
     if (width < 0) {
         width = 20
     }
     file.style.left = width + "px";
-    height = randInt(window.innerHeight-160);
+    height = randInt(window.innerHeight - 160);
     if (height < 0) {
         height = 60
     }
@@ -53,6 +55,31 @@ function overwriteFile(name, content) {
     file = document.getElementById("USERFILE--" + name)
     file.setAttribute("content", content)
 }
+
+function createfile() {
+    console.log(pageX)
+    console.log(pageY)
+
+    if (createfileblock != true) {
+        createfileblock = true
+        var file = document.getElementById("createfiletemplate").cloneNode(true)
+        file.childNodes[2].remove()
+        document.getElementById("filesarea").appendChild(file)
+        file.style.left = pageX
+        file.style.top = pageY
+        file.style.display = "block"
+    } else {
+        alert("You can't create 2 files at the same time!")
+    }
+
+}
+
+function movefile(filename, x, y) {
+    file = document.getElementById("USERFILE--" + filename)
+    file.style.left = x
+    file.style.top = y
+}
+
 
 function addloader() {
     var js = document.createElement("script")

@@ -5,8 +5,8 @@
         <script src="files/js/drag.js"></script>
         <script src="files/js/ctxmenu.js"></script>
         <script src="files/js/window.js"></script>
-        <link href="files/css/desktop.css" rel="stylesheet"></link>
-        <link href="files/css/window.css" rel="stylesheet"></link>
+        <link href="files/css/desktop.css" rel="stylesheet">
+        <link href="files/css/window.css" rel="stylesheet">
     </head>
     <body>
         <div class="windows">
@@ -39,16 +39,20 @@
                     <img src="files/img/filelogo.png">
                     <p>Hello.txt</p>
                 </div>
+                <div class="desktopfile" style="display: none;" id="createfiletemplate">
+                    <img src="files/img/filelogo.png">
+                    <input type="text" id="createfileinput" onkeydown="presss(this)">
+                </div>
             </div>
             <div class="menu" id="ctx">
                 <div class="menuoptions" id="opt">
-                        <li class="menu-option" id="cf" onclick="createFile()">Create File</li>
+                        <li class="menu-option" id="cf" onclick="createfile()">Create File</li>
                         <li class="menu-option" onclick="alert('naw man')">Placeholder</li>
                 </div>
             </div>
         </div>
     </body>
     
-    
+    <script src="files/js/afterloading.js"></script>
     
 </html>
