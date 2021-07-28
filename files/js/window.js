@@ -74,10 +74,34 @@ function createfile() {
 
 }
 
+// Bad, do not use thanks
 function movefile(filename, x, y) {
     file = document.getElementById("USERFILE--" + filename)
     file.style.left = x
     file.style.top = y
+}
+
+function presss(element) {
+    if (event.key == "Enter") {
+        console.log("Enter")
+
+        file = element.parentNode
+        fname = element.value
+        if (fname == "") {
+            return alert("Please specify a file name!")
+        }
+        element.remove()
+        filename = document.createElement("p")
+        file.setAttribute("type", "file")
+        file.setAttribute("filename", fname)
+        file.setAttribute("content", "")
+        filename.innerHTML = fname
+        file.appendChild(filename)
+        file.id = "USERFILE--" + fname
+        file.setAttribute("ondblclick", "customeditor(this)")
+        dragElement(document.getElementById("USERFILE--" + fname), "")
+        createfileblock = false
+    }
 }
 
 
